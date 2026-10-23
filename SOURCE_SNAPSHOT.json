@@ -1,0 +1,844 @@
+{
+  "created_at": "2026-10-23T13:00:10.106678+08:00",
+  "snapshot_type": "working-tree sources, including local modifications; no upstream Git history",
+  "source_roots": [
+    "OpenarmXR",
+    "lerobot",
+    "ros2_ws/src",
+    "openarmx_teleop_vr",
+    "openarmx_teleop_vr_apk",
+    "teleop_xr",
+    "openarm_mujoco",
+    "openarm"
+  ],
+  "file_count": 2414,
+  "total_bytes": 618130223,
+  "upstreams": {
+    "lerobot": {
+      "commit": "2438df13072d81c0422f81fb5e876fc1480d188b",
+      "branch": "main",
+      "origin": "git@github.com:huggingface/lerobot.git"
+    },
+    "ros2_ws/src/openarm_can": {
+      "commit": "95ad0a3d515118cd4aaa6240e30182f5a095c4fa",
+      "branch": "main",
+      "origin": "https://github.com/enactic/openarm_can.git"
+    },
+    "ros2_ws/src/openarm_description": {
+      "commit": "e1e52ce9853650346c0ce047dd371a7fefcbf284",
+      "branch": "main",
+      "origin": "https://github.com/enactic/openarm_description.git"
+    },
+    "ros2_ws/src/openarm_ros2": {
+      "commit": "39271ef167fb647bc51dc6da089bcd855476149c",
+      "branch": "main",
+      "origin": "git@github.com:enactic/openarm_ros2.git"
+    },
+    "openarmx_teleop_vr": {
+      "commit": "e8395372f7d033a6dcc4fdc495ec8017eed6e26b",
+      "branch": "6.0_basic",
+      "origin": "https://github.com/openarmx/openarmx_teleop_vr.git"
+    },
+    "teleop_xr": {
+      "commit": "62c0596205a2086ad6e6d92170c9117e29b978c0",
+      "branch": "main",
+      "origin": "https://github.com/qrafty-ai/teleop_xr.git"
+    },
+    "openarm_mujoco": {
+      "commit": "e5af55d2969ca7a975588f064f44074c4fd48ce2",
+      "branch": "master",
+      "origin": "https://github.com/enactic/openarm_mujoco.git"
+    },
+    "openarm": {
+      "commit": "94268f0806dd22b2b5d3b2a22e34d8e72efc95bf",
+      "branch": "main",
+      "origin": "git@github.com:enactic/openarm.git"
+    }
+  },
+  "symlinks": [
+    {
+      "path": "lerobot/CLAUDE.md",
+      "target": "AGENTS.md"
+    },
+    {
+      "path": "lerobot/docs/source/contributing.md",
+      "target": "../../CONTRIBUTING.md"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/act/README.md",
+      "target": "../../../../docs/source/policy_act_README.md"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/diffusion/README.md",
+      "target": "../../../../docs/source/policy_diffusion_README.md"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/eo1/README.md",
+      "target": "../../../../docs/source/eo1.mdx"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/groot/README.md",
+      "target": "../../../../docs/source/policy_groot_README.md"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/multi_task_dit/README.md",
+      "target": "../../../../docs/source/policy_multi_task_dit_README.md"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/pi0/README.md",
+      "target": "../../../../docs/source/policy_pi0_README.md"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/pi05/README.md",
+      "target": "../../../../docs/source/policy_pi05_README.md"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/rtc/README.md",
+      "target": "../../../../docs/source/policy_rtc_README.md"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/smolvla/README.md",
+      "target": "../../../../docs/source/policy_smolvla_README.md"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/tdmpc/README.md",
+      "target": "../../../../docs/source/policy_tdmpc_README.md"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/vqbet/README.md",
+      "target": "../../../../docs/source/policy_vqbet_README.md"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/wall_x/README.md",
+      "target": "../../../../docs/source/policy_walloss_README.md"
+    },
+    {
+      "path": "lerobot/src/lerobot/robots/earthrover_mini_plus/earthrover_mini_plus.mdx",
+      "target": "../../../../docs/source/earthrover_mini_plus.mdx"
+    },
+    {
+      "path": "lerobot/src/lerobot/robots/hope_jr/hope_jr.mdx",
+      "target": "../../../../docs/source/hope_jr.mdx"
+    },
+    {
+      "path": "lerobot/src/lerobot/robots/koch_follower/koch.mdx",
+      "target": "../../../../docs/source/koch.mdx"
+    },
+    {
+      "path": "lerobot/src/lerobot/robots/lekiwi/lekiwi.mdx",
+      "target": "../../../../docs/source/lekiwi.mdx"
+    },
+    {
+      "path": "lerobot/src/lerobot/robots/so_follower/so100.md",
+      "target": "../../../../docs/source/so100.mdx"
+    },
+    {
+      "path": "lerobot/src/lerobot/robots/so_follower/so101.md",
+      "target": "../../../../docs/source/so101.mdx"
+    },
+    {
+      "path": "lerobot/src/lerobot/teleoperators/so_leader/so100.md",
+      "target": "../../../../docs/source/so100.mdx"
+    },
+    {
+      "path": "lerobot/src/lerobot/teleoperators/so_leader/so101.md",
+      "target": "../../../../docs/source/so101.mdx"
+    },
+    {
+      "path": "ros2_ws/src/openarmx_teleop_bridge_vr",
+      "target": "../../openarmx_teleop_vr/openarmx_teleop_bridge_vr"
+    },
+    {
+      "path": "ros2_ws/src/openarmx_teleop_vr",
+      "target": "../../openarmx_teleop_vr/openarmx_teleop_vr"
+    },
+    {
+      "path": "teleop_xr/docs/assets",
+      "target": "../assets"
+    },
+    {
+      "path": "teleop_xr/docs/README.md",
+      "target": "../README.md"
+    }
+  ],
+  "secret_findings": [],
+  "exclusions": [
+    {
+      "path": "OpenarmXR/build",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "OpenarmXR/install",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "OpenarmXR/log",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "OpenarmXR/openarm_can/feedback_probe_can0_after_launch.csv",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "OpenarmXR/openarm_can/feedback_probe_can1_after_launch.csv",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "OpenarmXR/openarm_ros2/openarm_bringup/launch/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "OpenarmXR/openarmx_teleop_vr/openarmx_teleop_vr/openarmx_teleop_vr/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "OpenarmXR/openarmx_teleop_vr/openarmx_teleop_vr/scripts/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/.agents",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/.codex",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/.git",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/.pytest_cache",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/data",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/outputs",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/examples/openarm_xr/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot.egg-info",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/cameras/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/cameras/openarm_sim/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/cameras/opencv/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/cameras/reachy2_camera/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/cameras/realsense/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/cameras/zmq/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/common/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/configs/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/datasets/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/envs/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/motors/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/motors/damiao/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/motors/dynamixel/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/motors/feetech/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/optim/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/act/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/diffusion/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/eo1/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/gaussian_actor/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/groot/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/groot/action_head/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/multi_task_dit/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/pi0/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/pi05/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/pi0_fast/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/rtc/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/smolvla/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/tdmpc/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/vqbet/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/wall_x/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/policies/xvla/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/processor/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/rewards/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/rewards/classifier/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/rewards/sarm/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/robots/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/robots/bi_openarm_follower/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/robots/bi_so_follower/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/robots/earthrover_mini_plus/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/robots/hope_jr/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/robots/koch_follower/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/robots/lekiwi/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/robots/omx_follower/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/robots/openarm_follower/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/robots/openarm_mujoco_follower/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/robots/openarm_ros2_follower/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/robots/reachy2/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/robots/so_follower/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/robots/unitree_g1/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/rollout/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/rollout/inference/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/rollout/strategies/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/scripts/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/teleoperators/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/teleoperators/bi_openarm_leader/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/teleoperators/bi_so_leader/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/teleoperators/gamepad/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/teleoperators/homunculus/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/teleoperators/keyboard/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/teleoperators/koch_leader/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/teleoperators/omx_leader/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/teleoperators/openarm_leader/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/teleoperators/openarm_mini/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/teleoperators/pico_openarm_ik/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/teleoperators/reachy2_teleoperator/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/teleoperators/so_leader/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/teleoperators/unitree_g1/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/transforms/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/src/lerobot/utils/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/tests/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/tests/artifacts/cameras/test_rs.bag",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/datasets/lerobot/aloha_sim_insertion_human/frame_0.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/datasets/lerobot/aloha_sim_insertion_human/frame_1.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/datasets/lerobot/aloha_sim_insertion_human/frame_250.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/datasets/lerobot/aloha_sim_insertion_human/frame_251.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/datasets/lerobot/aloha_sim_insertion_human/frame_498.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/datasets/lerobot/aloha_sim_insertion_human/frame_499.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/datasets/lerobot/pusht/frame_0.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/datasets/lerobot/pusht/frame_1.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/datasets/lerobot/pusht/frame_159.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/datasets/lerobot/pusht/frame_160.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/datasets/lerobot/pusht/frame_80.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/datasets/lerobot/pusht/frame_81.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/datasets/lerobot/xarm_lift_medium/frame_0.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/datasets/lerobot/xarm_lift_medium/frame_1.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/datasets/lerobot/xarm_lift_medium/frame_12.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/datasets/lerobot/xarm_lift_medium/frame_13.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/datasets/lerobot/xarm_lift_medium/frame_23.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/datasets/lerobot/xarm_lift_medium/frame_24.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/image_transforms/default_transforms.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/image_transforms/single_transforms.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/policies/aloha_sim_insertion_human_act_/actions.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/policies/aloha_sim_insertion_human_act_/grad_stats.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/policies/aloha_sim_insertion_human_act_/output_dict.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/policies/aloha_sim_insertion_human_act_/param_stats.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/policies/aloha_sim_insertion_human_act_1000_steps/actions.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/policies/aloha_sim_insertion_human_act_1000_steps/grad_stats.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/policies/aloha_sim_insertion_human_act_1000_steps/output_dict.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/policies/aloha_sim_insertion_human_act_1000_steps/param_stats.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/policies/pusht_diffusion_/actions.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/policies/pusht_diffusion_/grad_stats.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/policies/pusht_diffusion_/output_dict.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/policies/pusht_diffusion_/param_stats.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/policies/xarm_lift_medium_tdmpc_use_mpc/actions.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/policies/xarm_lift_medium_tdmpc_use_mpc/grad_stats.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/policies/xarm_lift_medium_tdmpc_use_mpc/output_dict.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/policies/xarm_lift_medium_tdmpc_use_mpc/param_stats.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/policies/xarm_lift_medium_tdmpc_use_policy/actions.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/policies/xarm_lift_medium_tdmpc_use_policy/grad_stats.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/policies/xarm_lift_medium_tdmpc_use_policy/output_dict.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/artifacts/policies/xarm_lift_medium_tdmpc_use_policy/param_stats.safetensors",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "lerobot/tests/cameras/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/tests/fixtures/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "lerobot/tests/robots/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "ros2_ws/src/openarm_can/.git",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "ros2_ws/src/openarm_description/.git",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "ros2_ws/src/openarm_ros2/.git",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "ros2_ws/src/openarm_ros2/log",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "ros2_ws/src/openarm_ros2/openarm_bringup/launch/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "ros2_ws/src/openarm_ros2/openarm_gravity_comp/scripts/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "openarmx_teleop_vr/.git",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "openarmx_teleop_vr/openarmx_teleop_vr/launch/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "openarmx_teleop_vr/openarmx_teleop_vr/openarmx_teleop_vr/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "openarmx_teleop_vr_apk/openarmx-vr-pico.apk",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "openarmx_teleop_vr_apk/openarmx-vr-quest.apk",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "teleop_xr/.git",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "teleop_xr/teleop_xr/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "teleop_xr/teleop_xr/dist",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "teleop_xr/teleop_xr/cert.pem",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "teleop_xr/teleop_xr/key.pem",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "teleop_xr/teleop_xr/ik/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "teleop_xr/teleop_xr/ik/robots/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "teleop_xr/teleop_xr/ros2/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "teleop_xr/teleop_xr/utils/__pycache__",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "openarm_mujoco/.git",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "openarm/.git",
+      "reason": "generated-or-local-directory"
+    },
+    {
+      "path": "openarm/website/static/video/simulation/isaac-lab/lifting-cube.mp4",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "openarm/website/static/video/simulation/isaac-lab/openarm-bi-reach-demo.mp4",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "openarm/website/static/video/simulation/isaac-lab/opening-drawer.mp4",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "openarm/website/static/video/simulation/isaac-lab/reaching-task.mp4",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "openarm/website/static/video/simulation/mujoco/tutorial.mp4",
+      "reason": "generated-data-binary-or-credential-file"
+    },
+    {
+      "path": "openarm/website/static/video/teleop/vr/simulation.mp4",
+      "reason": "generated-data-binary-or-credential-file"
+    }
+  ],
+  "security_review": {
+    "credential_patterns": "No literal credential matches remain after review. The CI workflow URL at line 266 uses a shell environment variable rather than a literal password.",
+    "excluded_local_files": "Private keys, certificates, account configuration and .env files were excluded."
+  },
+  "export_changes": [
+    {
+      "path": "teleop_xr/.sisyphus/boulder.json",
+      "change": "Point the snapshot task record to a repository-relative completed export plan."
+    },
+    {
+      "path": "README.md",
+      "change": "Add repository overview, source/build scope and backup exclusions."
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "change": "Record component origins and preserved licenses."
+    },
+    {
+      "path": ".gitignore",
+      "change": "Exclude local build outputs, datasets, credentials and binaries."
+    },
+    {
+      "path": "teleop_xr/.sisyphus/plans/github-source-snapshot.md",
+      "change": "Record the completed snapshot task."
+    },
+    {
+      "path": "teleop_xr/.sisyphus/notepads/github-source-snapshot/decisions.md",
+      "change": "Record export decisions."
+    }
+  ],
+  "validation": {
+    "ros_package_discovery": "Passed: 10 packages, including openarm_gravity_comp; no duplicate package names with documented --base-paths.",
+    "clean_machine_build": "Not run; the task is a source backup.",
+    "hardware_execution": "Not run."
+  },
+  "exported_regular_files": 2419,
+  "exported_regular_bytes": 618137378
+}
