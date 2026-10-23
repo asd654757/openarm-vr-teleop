@@ -844,14 +844,23 @@
     {
       "path": "GRAVITY_CALIBRATION_RUNBOOK.md",
       "change": "Document concrete staged identification/validation commands; physical measurements remain to be collected."
+    },
+    {
+      "path": "tools/run_gravity_calibration_sim.py",
+      "change": "Add offline MuJoCo gravity identification and actual fixed-target forward dynamics comparisons; no ROS/CAN initialization."
+    },
+    {
+      "path": "docs/gravity_simulation",
+      "change": "Add simulation-only report, plots, numeric summaries and source URDF; raw simulated observations stay local."
     }
   ],
   "validation": {
     "ros_package_discovery": "Passed: 10 packages, including openarm_gravity_comp; no duplicate package names with documented --base-paths.",
     "clean_machine_build": "Not run; the task is a source backup.",
     "hardware_execution": "Not run.",
-    "gravity_calibration_tools": "Passed: known-slope/bias recovery, complete offline fit and matched-target comparison, mismatched target rejection, actual URDF/KDL invocation, isolated local ROS 14-joint capture and moving-state rejection. No CAN/hardware execution."
+    "gravity_calibration_tools": "Passed: known-slope/bias recovery, complete offline fit and matched-target comparison, mismatched target rejection, actual URDF/KDL invocation, isolated local ROS 14-joint capture and moving-state rejection. No CAN/hardware execution.",
+    "gravity_simulation": "Passed: 4 modeled cases, 20 poses/case, 320 static observation windows, 576 forward-dynamics hold windows; recover known 1.0 and 0.8 slopes; independent KDL/MuJoCo model check; no physical calibration."
   },
-  "exported_regular_files": 2422,
-  "exported_regular_bytes": 618188637
+  "exported_regular_files": 2429,
+  "exported_regular_bytes": 618494034
 }

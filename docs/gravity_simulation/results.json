@@ -1,0 +1,187 @@
+{
+  "simulation_only": true,
+  "mujoco_version": "3.8.1",
+  "source_urdf_sha256": "a84d742806558059e91f1124133733f99727a21b729664a43da1212c6760f62f",
+  "calculator_sha256": "dbbcba0a8979299e20db54cdb5149f271691437efab6a35245a0f28a7b35c897",
+  "max_kdl_mujoco_relative_error": 8.857672432339299e-16,
+  "gravity_m_s2": 9.80665,
+  "configured_gains": {
+    "left_kp": [
+      70.0,
+      70.0,
+      70.0,
+      400.0,
+      10.0,
+      10.0,
+      10.0
+    ],
+    "left_kd": [
+      2.75,
+      2.5,
+      2.0,
+      40.0,
+      0.7,
+      0.6,
+      0.5
+    ],
+    "right_kp": [
+      70.0,
+      70.0,
+      70.0,
+      400.0,
+      10.0,
+      10.0,
+      10.0
+    ],
+    "right_kd": [
+      2.75,
+      2.5,
+      2.0,
+      40.0,
+      0.7,
+      0.6,
+      0.5
+    ]
+  },
+  "encoded_gains": {
+    "left_kp": [
+      69.96336996336997,
+      69.96336996336997,
+      69.96336996336997,
+      400.0,
+      9.89010989010989,
+      9.89010989010989,
+      9.89010989010989
+    ],
+    "left_kd": [
+      2.7496947496947497,
+      2.4993894993894994,
+      2.0,
+      5.0,
+      0.6996336996336996,
+      0.5995115995115995,
+      0.4993894993894994
+    ],
+    "right_kp": [
+      69.96336996336997,
+      69.96336996336997,
+      69.96336996336997,
+      400.0,
+      9.89010989010989,
+      9.89010989010989,
+      9.89010989010989
+    ],
+    "right_kd": [
+      2.7496947496947497,
+      2.4993894993894994,
+      2.0,
+      5.0,
+      0.6996336996336996,
+      0.5995115995115995,
+      0.4993894993894994
+    ]
+  },
+  "control_hz": 100,
+  "physics_hz": 1000,
+  "ramp_seconds": 10,
+  "hold_seconds": 13.0,
+  "candidate_alphas": [
+    0.0,
+    0.2,
+    0.4,
+    0.5,
+    0.6,
+    0.8,
+    1.0,
+    1.2
+  ],
+  "wall_seconds": 159.6677043410018,
+  "cases": [
+    {
+      "scenario": "nominal_unclipped",
+      "expected_scalar": 1.0,
+      "fitted_alpha": 0.9999908144413827,
+      "ci95": [
+        0.9997613372534094,
+        1.0001859708842278
+      ],
+      "per_arm_alpha": {
+        "left": 1.0000067403388802,
+        "right": 0.9999511989640876
+      },
+      "held_out_model_rmse_nm": 0.002808791004324144,
+      "best_tested_alpha": 1.0,
+      "best_hold_rmse_deg": 2.30589248251729e-06,
+      "accepted_dynamic_records": 144,
+      "rejected_dynamic_records": []
+    },
+    {
+      "scenario": "mass_0_8_unclipped",
+      "expected_scalar": 0.8,
+      "fitted_alpha": 0.799990440487038,
+      "ci95": [
+        0.799760980970418,
+        0.8001851174128091
+      ],
+      "per_arm_alpha": {
+        "left": 0.8000067683771709,
+        "right": 0.7999498250579268
+      },
+      "held_out_model_rmse_nm": 0.0028088435615755813,
+      "best_tested_alpha": 0.8,
+      "best_hold_rmse_deg": 2.568094833137165e-07,
+      "accepted_dynamic_records": 144,
+      "rejected_dynamic_records": []
+    },
+    {
+      "scenario": "nominal_current_limits",
+      "expected_scalar": 1.0,
+      "fitted_alpha": 0.9999908144413827,
+      "ci95": [
+        0.9997613372534094,
+        1.0001859708842278
+      ],
+      "per_arm_alpha": {
+        "left": 1.0000067403388802,
+        "right": 0.9999511989640876
+      },
+      "held_out_model_rmse_nm": 0.002808791004324144,
+      "best_tested_alpha": 1.0,
+      "best_hold_rmse_deg": 1.149162134159335,
+      "accepted_dynamic_records": 144,
+      "rejected_dynamic_records": []
+    },
+    {
+      "scenario": "right_payload_0_2kg_current_limits",
+      "expected_scalar": null,
+      "fitted_alpha": 1.034568280689002,
+      "ci95": [
+        1.0258924353338155,
+        1.04814132441483
+      ],
+      "per_arm_alpha": {
+        "left": 1.0000067403388802,
+        "right": 1.1205396940583476
+      },
+      "held_out_model_rmse_nm": 0.08494248752441418,
+      "best_tested_alpha": 1.2,
+      "best_hold_rmse_deg": 1.2866954895354148,
+      "accepted_dynamic_records": 144,
+      "rejected_dynamic_records": []
+    }
+  ],
+  "limitations": [
+    "Known simulated plants; no evidence of the real arm's optimal scale.",
+    "No CAN, real actuator/current limits, friction, temperature, contacts or network latency.",
+    "Moving finger branches are excluded to match the existing KDL chain.",
+    "Static identification uses inverse-dynamics observations with explicitly injected sensor noise.",
+    "Hold comparison uses actual forward dynamics, not a formula assigned to the error.",
+    "Unclipped scenarios are theoretical controls; they do not authorize changing real torque limits.",
+    "The best tested alpha need not be a unique or continuous global optimum."
+  ],
+  "execution_provenance": {
+    "tools/run_gravity_calibration_sim.py": "e4267f928290929d7cceba7b26fd652d6b8f5ec83b6d1a9db7679a70cdd18172",
+    "tools/gravity_calibration.py": "642b1645bb6851d927c8dfa03597a2c1196d72f801cead8e1810a8cd2f213eb8",
+    "ros2_ws/src/openarm_ros2/openarm_gravity_comp/scripts/validate_mujoco_gravity.py": "d34c29e350a99d8871c7f66da62f2e5384dec9543e5176d5ed94e0a674dcf28f"
+  }
+}

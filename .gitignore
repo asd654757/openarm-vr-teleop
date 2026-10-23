@@ -43,6 +43,7 @@ dist/
 
 # Datasets, recordings and weights
 /experiments/gravity_calibration/
+/experiments/gravity_calibration_sim/
 data/
 outputs/
 wandb/

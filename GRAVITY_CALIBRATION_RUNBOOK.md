@@ -199,3 +199,31 @@ ros2 param set /openarm_gravity_comp gravity_scale "$GRAVITY_TRIAL_SCALE"
 - 最终部署比例及适用负载、姿态、速度范围。
 
 采样数量、稳定窗口阈值和模型激励阈值都是本项目的起始设计，实验前应结合噪声和任务要求确认并固定。方法依据见 [MIT 系统辨识讲义](https://underactuated.mit.edu/sysid.html)。
+
+## 不连接机械臂时的离线执行
+
+已提供 `tools/run_gravity_calibration_sim.py`，它不初始化 ROS、不访问 CAN、不发布硬件命令。它用 URDF 建立 MuJoCo 模型，生成带已知噪声/偏置的静态逆动力学观测，再执行实际前向动力学 PD 保持，对照当前限幅、质量偏差和右臂额外负载。
+
+在本机重现完整实验：
+
+```bash
+cd ~/OPENARM
+source /opt/ros/humble/setup.bash
+source ~/OPENARM/OpenarmXR/install/setup.bash
+
+/usr/bin/python3 -c 'import xacro; xacro.main()' \
+  OpenarmXR/openarm_description/assets/robot/openarm_v1.0/urdf/openarm_v10.urdf.xacro \
+  bimanual:=true ros2_control:=true use_fake_hardware:=false \
+  -o /tmp/openarm_calibration_sim_source.urdf
+
+SIM_OUTPUT="$HOME/OPENARM/experiments/gravity_calibration_sim/offline_$(date +%Y%m%d_%H%M%S)"
+MUJOCO_GL=egl ~/anaconda3/envs/oplerobot310/bin/python \
+  tools/run_gravity_calibration_sim.py \
+  --urdf /tmp/openarm_calibration_sim_source.urdf \
+  --calculator ~/OPENARM/OpenarmXR/install/openarm_gravity_comp/lib/openarm_gravity_comp/gravity_comp_calculate \
+  --output "$SIM_OUTPUT"
+```
+
+这里 `use_fake_hardware:=false` 只让离线展开的 URDF 包含真实控制配置供读取增益；上述命令不加载 ROS 硬件插件、不启动 bringup，也不连接电机。
+
+首轮结果在 `experiments/gravity_calibration_sim/offline_20261023_full/REPORT.md`。仿真能验证辨识方法和所指定模型中的参数表现，不能单独确定真实机械臂的最终比例。
