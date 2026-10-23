@@ -832,6 +832,10 @@
     {
       "path": "teleop_xr/.sisyphus/notepads/github-source-snapshot/decisions.md",
       "change": "Record export decisions."
+    },
+    {
+      "path": "docs/gravity_compensation_calibration.md",
+      "change": "Add proposed gravity-scale identification and validation protocol; no new physical measurements or claimed optimal scale."
     }
   ],
   "validation": {
@@ -839,6 +843,6 @@
     "clean_machine_build": "Not run; the task is a source backup.",
     "hardware_execution": "Not run."
   },
-  "exported_regular_files": 2419,
-  "exported_regular_bytes": 618137378
+  "exported_regular_files": 2420,
+  "exported_regular_bytes": 618149302
 }

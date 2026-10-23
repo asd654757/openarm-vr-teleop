@@ -37,6 +37,7 @@ D435i RGB（640 x 480，30 FPS）
 
 ## 操作文档
 
+- [重力补偿比例辨识与验证方案（待真机实验）](docs/gravity_compensation_calibration.md)
 - [开机到带视觉遥操采集 SOP](lerobot/examples/openarm_xr/OPENARMX_VISUAL_TELEOP_RECORDING_SOP.md)
 - [项目技术总结](lerobot/examples/openarm_xr/OPENARMX_PROJECT_TECHNICAL_SUMMARY.md)
 - [采集、重播与 Rerun 工作流](lerobot/examples/openarm_xr/OPENARMX_LEROBOT_TROUBLESHOOTING_AND_WORKFLOW.md)
