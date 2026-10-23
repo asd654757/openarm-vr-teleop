@@ -42,6 +42,7 @@ dist/
 .idea/
 
 # Datasets, recordings and weights
+/experiments/gravity_calibration/
 data/
 outputs/
 wandb/

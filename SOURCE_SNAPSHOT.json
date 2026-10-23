@@ -836,13 +836,22 @@
     {
       "path": "docs/gravity_compensation_calibration.md",
       "change": "Add proposed gravity-scale identification and validation protocol; no new physical measurements or claimed optimal scale."
+    },
+    {
+      "path": "tools/gravity_calibration.py",
+      "change": "Add read-only ROS parameter/static data recording and offline identification/comparison; no robot command or parameter writes."
+    },
+    {
+      "path": "GRAVITY_CALIBRATION_RUNBOOK.md",
+      "change": "Document concrete staged identification/validation commands; physical measurements remain to be collected."
     }
   ],
   "validation": {
     "ros_package_discovery": "Passed: 10 packages, including openarm_gravity_comp; no duplicate package names with documented --base-paths.",
     "clean_machine_build": "Not run; the task is a source backup.",
-    "hardware_execution": "Not run."
+    "hardware_execution": "Not run.",
+    "gravity_calibration_tools": "Passed: known-slope/bias recovery, complete offline fit and matched-target comparison, mismatched target rejection, actual URDF/KDL invocation, isolated local ROS 14-joint capture and moving-state rejection. No CAN/hardware execution."
   },
-  "exported_regular_files": 2420,
-  "exported_regular_bytes": 618149302
+  "exported_regular_files": 2422,
+  "exported_regular_bytes": 618188637
 }
